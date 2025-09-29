@@ -1,0 +1,160 @@
+.login-container {
+  display: flex;
+  height: 100vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Left - illustration */
+.login-illustration {
+  flex: 1;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px;
+  color: white;
+
+  background-image: url("C:\Users\RO\Projects\minibank-client\public\images\banking.jpg"); /* ✅ keep inside public/images */
+  background-size: cover;
+  background-position: center;
+}
+
+.login-illustration::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(42, 158, 46, 0.7);
+  z-index: 1;
+}
+
+.login-illustration h3,
+.login-illustration p {
+  position: relative;
+  z-index: 2;
+}
+
+.login-illustration h3 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.login-illustration p {
+  font-size: 16px;
+  max-width: 320px;
+}
+
+/* Right - form */
+.login-form-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff;
+  padding: 40px;
+}
+
+.login-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.login-form {
+  width: 100%;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.login-input {
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  outline: none;
+  font-size: 14px;
+}
+
+.login-input:focus {
+  border-color: #4caf50;
+  box-shadow: 0 0 4px rgba(76, 175, 80, 0.3);
+}
+
+.login-button {
+  padding: 12px;
+  background: #4caf50;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.login-button:hover {
+  background: #43a047;
+}
+
+.signup-button {
+  padding: 10px;
+  background: #2196f3;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+  width: 100%;
+  max-width: 300px;
+  transition: background 0.3s;
+}
+
+.signup-button:hover {
+  background: #1976d2;
+}
+
+.login-message {
+  margin-top: 10px;
+  color: red;
+  font-size: 14px;
+  text-align: center;
+}
+
+/* Modal */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal-content {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  width: 320px;
+  text-align: center;
+  position: relative;
+}
+
+.modal-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  border: none;
+  background: transparent;
+  font-size: 18px;
+  cursor: pointer;
+}
