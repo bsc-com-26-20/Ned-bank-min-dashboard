@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { apiRequest } from "../api/api";
 import "./LoginPage.css";
+import bankingImage from "../assets/images/banking.jpg";
+
 
 function LoginPage({ onLogin }) {
   const [username, setUsername] = useState("");
@@ -50,7 +52,14 @@ function LoginPage({ onLogin }) {
   return (
     <div className="login-container">
       {/* Left Side - Illustration */}
-      <div className="login-illustration">
+      <div 
+        className="login-illustration" 
+        style={{
+          backgroundImage: `url(${bankingImage})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      >
         <h3>Welcome to NED Bank</h3>
         <p>
           Your trusted partner in banking. Manage your accounts, monitor transactions,

@@ -16,7 +16,7 @@
   padding: 40px;
   color: white;
 
-  background-image: url("C:\Users\RO\Projects\minibank-client\public\images\banking.jpg"); /* ✅ keep inside public/images */
+  /* background-image: url("/images/banking.jpg"); */
   background-size: cover;
   background-position: center;
 }
