@@ -50,11 +50,6 @@ function CustomersPage({ refreshDashboard }) { // ✅ accept refreshDashboard pr
       dob = `${year}-${month.padStart(2, "0")}-${day.padStart(2, "0")}`;
     }
 
-    const payload = {
-      ...form,
-      date_of_birth: dob
-    };
-
     const data = await createCustomer(form);
     if (data.customer) {
       setMessage("✅ Customer created!");
