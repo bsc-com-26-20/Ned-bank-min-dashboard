@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:5000";
+const API_URL = "https://ned-bank-server.onrender.com";
 
 // Get access token from localStorage
 function getToken() {
