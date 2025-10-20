@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { apiRequest } from "../api/api";
 import "./LoginPage.css";
 import bankingImage from "../assets/images/banking.jpg";
@@ -8,10 +8,18 @@ function LoginPage({ onLogin }) {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [message, setMessage] = useState("");
-
-  // 🔹 For Signup modal
   const [showSignup, setShowSignup] = useState(false);
   const [newUser, setNewUser] = useState({ username: "", password: "" });
+
+  // 🔔 Show alert when the page first loads
+  useEffect(() => {
+    alert(
+      "👋 Welcome to NED Bank Demo!\n\n" +
+      "You can log in with this demo account:\n" +
+      "Username: staff1\nPassword: password123\n\n" +
+      "Or create your own account — any username and password will work."
+    );
+  }, []);
 
   // 🔹 Handle Login
   const handleLogin = async (e) => {
@@ -132,7 +140,7 @@ function LoginPage({ onLogin }) {
                 className="login-input"
               />
               <button type="submit" className="login-button">
-                Sign Up
+                Sign Up And Login
               </button>
             </form>
           </div>

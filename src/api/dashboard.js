@@ -1,4 +1,4 @@
-import { apiRequest } from "./api";  // ✅ path corrected
+import { apiRequest } from "./api";
 
 // Get overall stats
 export async function fetchStats() {
@@ -14,7 +14,7 @@ export async function fetchRecentTransactions() {
 export async function generateReport() {
   const response = await apiRequest("/reports/daily", {
     method: "GET",
-    responseType: "blob", // make sure we get binary data
+    responseType: "blob",
   });
 
   const blob = await response.blob(); // PDF data

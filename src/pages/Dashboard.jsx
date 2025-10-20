@@ -96,6 +96,16 @@ function Dashboard() {
             >
               Customers
             </li>
+            <li>
+              <a
+                href="https://currencydashboard-production.up.railway.app/"
+                target="_blank"
+                rel="noreferrer"
+                className="currency-dashboard-btn"
+              >
+                Currency Dashboard
+              </a>
+            </li>
             <li onClick={handleLogout} className="logout-btn">
               Logout
             </li>
