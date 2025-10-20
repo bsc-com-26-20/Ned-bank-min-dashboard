@@ -193,3 +193,21 @@
 .report-btn:hover {
   background: #2980b9;
 }
+
+/* Currency Dashboard button styling */
+.currency-dashboard-btn a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+}
+
+.currency-dashboard-btn:hover {
+  background: #34495e;
+  border-radius: 6px;
+}
+
+.currency-dashboard-btn a:hover {
+  color: white;
+}

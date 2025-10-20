@@ -96,7 +96,7 @@ function Dashboard() {
             >
               Customers
             </li>
-            <li>
+            <li className="currency-dashboard-btn">
               <a
                 href="https://currencydashboard-production.up.railway.app/"
                 target="_blank"
